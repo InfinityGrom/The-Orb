@@ -1,0 +1,32 @@
+#Mother.txt
+#---
+#For use in the river hub of the city world. The player cannot progress without talking to her.
+
+[Oh no, what am I going to do?{}] [What's wrong?{Line 2}] [I dunno, lady.{Line 3}]
+[My darling little Bobby ran off to the city all by himself!{}] [I could help.{Line 4}] [That's rough, buddy.{Line 5}]
+[Oh! I know! Maybe you could help me. I have to find my little Bobby!{}] [Sure, why not.{Line 4}] [Not a chance!{Line 5}]
+[Oh, thank you, thank you so much!{Line 6}]
+[How rude!{line 7}]
+[I'll just follow along. Lead the way! {End, Event MotherFollows, Set TalkedToMother}]
+[I'm going to come with you anyway. {End, Event MotherFollows, Set TalkedToMother}]
+
+if TalkedToMother and not MotherIsFollowing
+[Hey! What happened?{Line 9}]
+[We need to get going and find my little Bobby!{Event MotherFollows, End}]
+
+if MotherIsFollowing choose 10, 12
+[Oh my, would you look at that!{End}]
+[Hmm... I wonder how we'll get through here?{End}]
+[I hope little Bobby is alright...{End}]
+
+#Note: This should trigger AS the player enters the break room hub
+if OnChildFound
+[OH! {Line 14, Event MoveMotherToChild}]
+[Little Bobby! Are you okay? {Line 15}]
+[I was so terribly worried... Don't you ever run off again! {End, set AfterChildFound}]
+
+if AfterChildFound
+[Ah, yes, mister head. {Line 17}]
+[I can't thank you enough for what you did! {}][You're very welcome, ma'am. {Line 18}][Watch your kid better, lady. {Line 19}]
+[I do hope we'll see you again! {End}]
+[You don't have to sound so bitter about it. {End}]
