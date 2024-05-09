@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerBallControl : MonoBehaviour {
 
-	public bool playerLock =false;
+	public bool playerLock =true;
 
 	// Physics for lateral movement
 	public float moveForce = 75f;			// Amount of force for translational movement
@@ -134,7 +134,7 @@ public class PlayerBallControl : MonoBehaviour {
 
 			if (Mathf.Abs(Vector2.Angle(-Physics2D.gravity, contact.normal)) < groundedThresholdAngle)
 				grounded = true;
-
+			
 			//Determine if ball should deform
 			float velocityToCheck = boostThresholdVelocity;
 			if(wasGrounded)
@@ -177,7 +177,7 @@ public class PlayerBallControl : MonoBehaviour {
 				transform.parent.parent = scaleObject.transform;
 				originalScale = scaleObject.transform.localScale;
 				deformTimer = 0.0f;
-
+			
 				originalMagnitude = originalVelocity.magnitude;
 				//Calculate the reflection of originalVelocity about the collision normal to get the ball's new velocity vector
 				Vector2 reflection = (2 * Vector2.Dot(originalVelocity,collisionNormal) * collisionNormal - originalVelocity);
