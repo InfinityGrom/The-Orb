@@ -53,7 +53,7 @@ public class PlayerDataManager : MonoBehaviour {
 		{
 			ImmutableData.CheckpointData cData = ImmutableData.GetCheckpointData()[lastCheckpoint];
 
-			GameObject cam = GameObject.FindGameObjectWithTag("MainCamera");
+			GameObject cam = GameObject.FindGameObjectWithTag("Main Camera");
 			cam.GetComponent<CameraFollow>().LoadConfig(cData.camConfig);
 
 			transform.position = cData.location;
