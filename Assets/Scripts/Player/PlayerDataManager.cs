@@ -29,21 +29,24 @@ public class PlayerDataManager : MonoBehaviour {
 	void Start () {
 		if (!debugNoLoad)
 			LoadCurrentSave ();
+		/*
 		if (debugInitCamera && !loadedLevel)
 		{
-			GameObject cam = GameObject.FindGameObjectWithTag("MainCamera");
-			CameraFollowConfig cfc = new CameraFollowConfig();
-			cfc.minXAndY = new Vector2(-1000f, -1000f);
-			cfc.maxXAndY = new Vector2(1000f, 1000f);
-			cfc.isLocked = false;
-			cfc.orthoSize = 7f;
-			cfc.position = new Vector3(this.transform.position.x, this.transform.position.y, -10f);
-			cam.GetComponent<CameraFollow>().LoadConfig(cfc);
+			
+			//GameObject cam = GameObject.FindGameObjectWithTag("MainCamera");
+			//CameraFollowConfig cfc = new CameraFollowConfig();
+			//cfc.minXAndY = new Vector2(-1000f, -1000f);
+			//cfc.maxXAndY = new Vector2(1000f, 1000f);
+			//cfc.isLocked = false;
+			//cfc.orthoSize = 7f;
+			//cfc.position = new Vector3(this.transform.position.x, this.transform.position.y, -10f);
+			//cam.GetComponent<CameraFollow>().LoadConfig(cfc);
 		}
+		*/
 		if (debugInitRespawn)
 		{
 			Death.respawn = new Vector2(transform.position.x, transform.position.y);
-			Death.camConfig = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraFollow>().GetConfig();
+			//Death.camConfig = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraFollow>().GetConfig();
 		}
 	}
 
