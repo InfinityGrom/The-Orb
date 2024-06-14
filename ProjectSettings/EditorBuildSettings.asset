@@ -8,43 +8,25 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/StartScreen.unity
     guid: 776d194c995814e5881a1b61e52ba0d7
+  - enabled: 1
+    path: Assets/Scenes/StarterScene.unity
+    guid: 44073c38b16c08c47a0fa540720c650f
   - enabled: 0
     path: Assets/Scenes/Pier.unity
     guid: 90d920727c0274a40bfbafe46674e718
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/City.unity
     guid: e7b15c2ec7d8a364fb709e011d228bb7
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Jungle.unity
     guid: 3ebdeb3a08e31b54f96be7b66abc5ae1
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Beach.unity
     guid: b7f5a49b2c9c8444e96b06af510e2350
+  - enabled: 1
+    path: Assets/Scenes/Space.unity
+    guid: ddb29441ad1425146825dd55b03aa7a6
   - enabled: 0
     path: Assets/Scenes/Space_OLD.unity
     guid: dadc94e872aeb6547836f858596be05d
-  - enabled: 0
-    path: Assets/Scenes/Space.unity
-    guid: ddb29441ad1425146825dd55b03aa7a6
-  - enabled: 1
-    path: Assets/Assets/Scenes/MainMenu.unity
-    guid: 75b918e0f5e1cbd46bcc4f74f43119c0
-  - enabled: 1
-    path: Assets/Assets/Scenes/Level 1.unity
-    guid: f72dc7e905efd974cb946bf3c59d0fc5
-  - enabled: 1
-    path: Assets/Assets/Scenes/Level 2.unity
-    guid: 4e3fdfa75fb798b47bcc1ef7acdf3105
-  - enabled: 1
-    path: Assets/Assets/Scenes/Level 3.unity
-    guid: 392005173d597404a9205f366ec31144
-  - enabled: 1
-    path: Assets/Assets/Scenes/Level 4.unity
-    guid: 9899d90162f13c04aafff64da5c94d5d
-  - enabled: 1
-    path: Assets/Assets/Scenes/Level 5 WIP.unity
-    guid: 0f75bf106207b4b408e049ae8cd892f7
-  - enabled: 1
-    path: Assets/Assets/Scenes/Test.unity
-    guid: 54517e9843c2856438a8d3af40f348a7
   m_configObjects: {}

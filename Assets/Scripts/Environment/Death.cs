@@ -109,7 +109,7 @@ public class Death : MonoBehaviour {
 			escort.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 			escort.GetComponent<FollowAI>().enabled = false;
 		}
-		/*
+
 		camObj.GetComponent<CameraFollow>().LoadConfig(camConfig);
 		if (!camConfig.isLocked)
 			camObj.transform.position = new Vector3 (Mathf.Clamp (player.transform.position.x, camConfig.minXAndY.x, camConfig.maxXAndY.x),
@@ -117,7 +117,7 @@ public class Death : MonoBehaviour {
 		                                         -10f);
 		else
 			camObj.transform.position = new Vector3(camConfig.lockedPosition.x, camConfig.lockedPosition.y, -10f);
-		*/
+
 		PlayerDataManager.numberDeaths++;
 		locked = false;
 	}
